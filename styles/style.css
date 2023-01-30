@@ -1,0 +1,86 @@
+/* work sans font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Work+Sans&display=swap');
+
+/* common styles */
+* {
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    margin: 0;
+}
+
+.main-btn input {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
+    border: 0;
+    padding: 20px 24px;
+    background-color: #FD6E0A;
+    border-radius: 5px;
+    margin: 0 870px;
+    
+}
+
+/* ----------------------
+    style of navigation
+ ------------------------- */
+header {
+    background: rgba(255, 144, 14, 0.1);
+    width: 1920px;
+    height: 1322px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    padding: 50px 228px;
+}
+
+.nav-items {
+    display: flex;
+    column-gap: 30px;
+    padding: 63px 240px;
+}
+
+.nav-items p {
+    color: #424242;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* --------------------------------------------
+        style of title and banner section 
+------------------------------------------------*/
+
+.intro {}
+
+.whole-header {}
+
+.intro-starting {
+    text-align: center;
+    width: 862px;
+    padding-top: 105px;
+    padding-left: 520px;
+}
+
+.intro-title {
+    font-weight: 700;
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.intro-subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 32px;
+}
+
+.banner{
+    padding: 30px 240px;
+}
