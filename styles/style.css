@@ -92,7 +92,7 @@ style of quick list of feature
 
 .feature-starting {
     display: flex;
-    
+
 }
 
 .feature-container {}
@@ -135,9 +135,91 @@ style of quick list of feature
     font-weight: 400;
     font-size: 16px;
     color: #727272;
-    
+
 }
-#btn2 input{
+
+#btn2 input {
     margin: 0;
     margin-top: 32px;
+}
+
+/* --------------------------------
+       feature list styles         
+----------------------------------- */
+.feature-list{
+margin-top: 130px;
+}
+.list-container{
+    margin-left: 240px;
+    display: flex;
+}
+.title-line {
+    display: flex;
+    gap: 21px;
+}
+
+.vertical {
+    border-left: 5px solid orange;
+    height: 106px;
+}
+
+.list-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    width: 468px;
+    margin-bottom: 24px;
+}
+
+.list-description {
+    color: #727272;
+    font-weight: 400;
+    font-size: 16px;
+    width: 586px;
+    
+}
+
+.box-list{
+    margin-top: 30px;
+    width: 586px;
+    background: #FFFFFF;
+box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+border-radius: 8px;
+padding: 30px;
+margin-bottom: 20px;
+}
+
+.box-title{
+    font-weight: 600;
+font-size: 20px;
+margin-bottom: 10px;
+}
+
+.architect{
+   margin-left: 54px;
+}
+.banner2{
+margin-left: 146px;
+border-radius: 8px;
+}
+.experience{
+    width: 342px;
+    height: 150px;
+    background: #FF900E;
+border-radius: 8px;
+padding-top: 45px;
+position: relative;
+top: -130px;
+} 
+.letter1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 65px;
+    color: #FFFFFF;
+}
+.letter2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+    color: #FFFFFF;
 }
