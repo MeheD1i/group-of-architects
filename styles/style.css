@@ -26,7 +26,6 @@
 header {
     background: rgba(255, 144, 14, 0.1);
     width: 1920px;
-    height: 1322px;
     margin-bottom: 82px;
 }
 
@@ -264,6 +263,12 @@ style of quick list of feature
     border: 1px solid #FF900E;
     border-radius: 8px;
     width: 241.83px;
+    transition: all 0.3s ease-in-out;
+}
+
+.box-stats:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px #FF900E;
 }
 
 .stats-info {
@@ -303,25 +308,165 @@ style of quick list of feature
     text-align: center;
 }
 
-.spn-logo{
+.spn-logo {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     margin: 50px 240px 130px 240px;
 }
 
 /* --------------------------
           footer styles       
 ----------------------------- */
-footer{
+footer {
     margin-left: 240px;
     margin-right: 240px;
     margin-bottom: 216px;
     background: #FFF4E7;
-border-radius: 8px;
+    border-radius: 8px;
 }
-.foooter-text{
+
+.foooter-text {
     font-weight: 400;
-font-size: 20px;
-color: #424242;
-padding: 40px 370px;
+    font-size: 20px;
+    color: #424242;
+    padding: 40px 370px;
+}
+
+/* responsive style */
+/* ----------------------
+     responsive for phone  
+--------------------------- */
+@media only screen and (max-width : 688px) {
+    header {
+        width: 100%;
+        padding: 0;
+    }
+
+    .nav-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .nav-title {
+        padding-left: 0;
+    }
+
+    .nav-items {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .intro-starting {
+        text-align: left;
+        padding-top: 0;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .main-btn input {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .banner {
+        padding: 0;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    /* feature starting part */
+    .feature-starting {
+        flex-direction: column;
+    }
+
+    .feature-images {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 0;
+    }
+
+    .feature-images img {
+        width: 100%;
+    }
+
+    .feature-info {
+        margin: 0;
+        width: 100%;
+    }
+
+    .feature-description {
+        width: 100%;
+    }
+
+    /* feature list start */
+    .list-container {
+        flex-direction: column;
+    }
+
+    .list-container {
+        margin-left: 0;
+    }
+
+    .list-title,
+    .list-description,
+    .banner2 img,
+    .fact-info {
+        width: 100%;
+    }
+
+    .vertical {
+        height: 170px;
+    }
+
+    .box-list {
+        padding: 0;
+        width: auto;
+    }
+
+    .architect {
+        margin-left: 0;
+    }
+
+    .experience {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .facts {
+        margin-left: 0;
+    }
+
+    /* stats style */
+    .stats {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 80px;
+        grid-row-gap: 30px;
+    }
+
+    /* sponsor part */
+    .sponsor-title,
+    .sponsor-info {
+        text-align: left;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .spn-logo {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+        margin-left: 120px;
+    }
+
+    /* footer part */
+    footer {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .foooter-text {
+        width: 100%;
+        padding-left: 25px;
+    }
 }
